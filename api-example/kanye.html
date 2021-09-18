@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanye West</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="min-w-screen min-h-screen bg-gray-200 flex items-center justify-center px-5 py-5">
+        <!-- button start -->
+        <div class="">
+            <button onclick="loadQuotes()" class="px-4 py-3 bg-blue-600 rounded-md text-white outline-none focus:ring-4 shadow-lg transform active:scale-y-75 transition-transform flex">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+
+                <span class="ml-2">Generate Quote</span>
+            </button>
+        </div>
+        <!-- button end -->
+        <div class="w-full mx-auto rounded-lg bg-white shadow-lg px-5 pt-5 pb-10 text-gray-800" style="max-width: 500px">
+            <div class="w-full mb-10">
+                <div class="text-3xl text-indigo-500 text-left leading-tight h-3">“</div>
+                <p id="quote-text" class="text-sm text-gray-600 text-center px-5">Please generate quote</p>
+                <div class="text-3xl text-indigo-500 text-right leading-tight h-3 -mt-3">”</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BUY ME A BEER AND HELP SUPPORT OPEN-SOURCE RESOURCES -->
+    <div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
+        <div>
+            <a title="Buy me a beer" href="https://www.buymeacoffee.com/scottwindon" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+                <img class="object-cover object-center w-full h-full rounded-full" src="https://i.pinimg.com/originals/60/fd/e8/60fde811b6be57094e0abc69d9c2622a.jpg" />
+            </a>
+        </div>
+    </div>
+
+    <script src="js/kanye.js"></script>
+</body>
+
+</html>
